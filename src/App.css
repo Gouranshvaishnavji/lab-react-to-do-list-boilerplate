@@ -1,0 +1,66 @@
+.todo-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em; /* Use em for font size to make it responsive */
+}
+
+.task-input, .task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.task-input input, .task-item input {
+  flex-grow: 1; /* Allow input to take up available space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em; /* Use em for font size to make it responsive */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Use em for font size to make it responsive */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .todo-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .task-input input, .task-item input {
+      padding: 6px;
+      font-size: 0.9em;
+  }
+
+  button {
+      padding: 6px 10px;
+      font-size: 0.9em;
+  }
+}
